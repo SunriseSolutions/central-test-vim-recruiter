@@ -1,5 +1,5 @@
-import {Component, ElementRef } from '@angular/core';
-
+import { Component, ElementRef, Inject } from '@angular/core';
+import { AppSettings } from './app.settings';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +10,12 @@ export class AppComponent {
   title = 'app';
   employerCode: string;
   candidateCode: string;
-  
-  constructor(private elementRef:ElementRef) {
+  settings: AppSettings;
+
+  constructor(private elementRef: ElementRef) {
     this.employerCode = this.elementRef.nativeElement.getAttribute('employerCode');
     this.candidateCode = this.elementRef.nativeElement.getAttribute('candidateCode');
-}
+    this.settings  = new AppSettings();
+  }
 
 }
