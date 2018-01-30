@@ -1,14 +1,399 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>CtVimRecruiter</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="title" content="Central Test" />
+<meta name="description" content="Administration" />
+<meta name="keywords" content="central test" />
+<meta name="robots" content="index, test" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Central Test</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+	<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+						n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+						n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+						t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+						document,'script','https://connect.facebook.net/en_US/fbevents.js');
+						fbq('init', '236361633408063');
+						fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=236361633408063&ev=PageView&noscript=1"/></noscript>
+
+<script type="text/javascript">
+	var CKEDITOR_BASEPATH = '/js/vendor/ckeditor/';
+</script>
+<script type="text/javascript" src="http://centraltest.ct:81/js/getJS.php?version=1517292222&app=customeroffice-responsive"></script>
+
+<script type="text/javascript">
+	$.widget.bridge("uitooltip", $.ui.tooltip);
+</script>
+<script type="text/javascript">
+	CTR.culture = 'fr_FR';
+	rk.util.i18n.translations.fr  = {"confirm.validate":"Valider","confirm.cancel":"Annuler","confirm.are_you_sure":"\u00cates-vous s\u00fbr(e) ?","form.modify":"Modifier","form.add":"Ajouter","form.delete":"Supprimer","form.save":"Enregistrer","alert.noSelectedTest":"Aucune \u00e9valuation s\u00e9lectionn\u00e9e","confirm.archiveCandidateConfirm":"Souhaitez-vous archiver les participants s\u00e9l\u00e9ctionn\u00e9s ?","confirm.groupCandidateConfirm":"Cr\u00e9er un nouveau groupe \u00e0 partir des participants s\u00e9l\u00e9ctionn\u00e9s ?","confirm.unarchiveCandidateConfirm":"Souhaitez-vous d\u00e9sarchiver les participants s\u00e9l\u00e9ctionn\u00e9s ?","confirm.unarchiveCandidateConfirmCTTO":"Souhaitez-vous d\u00e9sarchiver les participants s\u00e9l\u00e9ctionn\u00e9s ?<br\/>Seuls les participants en \u00e9tat 'Refus\u00e9\/Archiv\u00e9' seront restor\u00e9s.","form.search":"Rechercher","help.addToGroup":"Ajouter les participants s\u00e9l\u00e9ctionn\u00e9s \u00e0 ce groupe","alert.invalidGroupName":"Veuillez saisir un nom de groupe valide.","msg.groupDeleteConfirmation":"Le groupe a bien \u00e9t\u00e9 supprim\u00e9.","confirm.deleteData":"Vous \u00eates sur le point de supprimer d\u00e9finitivement des donn\u00e9es. Souhaitez-vous continuer ?","alert.noUserSelected":"Veuillez s\u00e9l\u00e9ctionner au moins 1 utilisateur.","groups.newGroup":"Nouveau groupe","confirm.deleteCandidateGroup":"Etes vous s\u00fbr de vouloir supprimer ce groupe de participants ?","help.edit":"Editer","CTCodeplugin.title":"Ajout d'un code personnalis\u00e9","help.draggable":"Faites glissez cette fen\u00eatre","reportCustomizationI18n.noPartAssigned":"Aucune partie assign\u00e9e au rapport","reportCustomizationI18n.allDefaultPartsAssigned":"Toutes les parties de rapport par d\u00e9faut sont affect\u00e9es au rapport.","reportCustomizationI18n.allCustomPartsAssigned":"Toutes les parties de rapport personnalis\u00e9es sont affect\u00e9es au rapport.","reportCustomizationI18n.customParts":"Vos parties de rapport personnalis\u00e9es","reportCustomizationI18n.defaultParts":"Parties de rapport par d\u00e9faut "};
+    rk.util.i18n.language="fr"; 
+	</script>
+	<link href="http://centraltest.ct:81/css/getCSS.php?version=1517292222&app=customeroffice-responsive" media="all" type="text/css" rel="stylesheet"/>
+	  </head>
+
+<body class=" fixed-header">
+	<div id="wrapAll">
+		<header>
+	<nav class="navbar navbar-defaut navbar-fixed-top ec-first-bg-color ec-first-text-color">
+		<span class="navbar-brand"> 
+			<span id="logo" class="logo logo-responsive"></span>
+		</span>
+		
+				<a class="toggle-nav btn pull-left" href="#"><i class="icon-reorder"></i></a>
+				<ul class="nav">
+												<li class="dropdown">
+				<a href="#" class="btn dropdown-toggle" data-toggle="dropdown"> 
+					<span class="hidden-xs">Gestion du compte&nbsp; <i class="fa fa-caret-down"></i></span> 
+					<span class="hidden-sm hidden-md hidden-lg"><i class="fa fa-cogs"></i></span>
+				</a>
+				<ul class="dropdown-menu pull-left">
+										<li>
+						<a href="/auto-increment/interfaceGeneralInformations"> 
+							<span><i class="fa fa-info-circle"></i>&nbsp;</span>
+							Informations générales						</a>
+					</li>
+										<li>
+						<a href="/auto-increment/interfaceBillingInformations"> 
+							<span><i class="fa fa-money"></i>&nbsp;</span>
+							Informations comptables						</a>
+					</li>
+										<li class="divider"></li>
+										<li>
+						<a href="/auto-increment/contractsShow"> 
+							<span><i class="fa fa-file-text-o"></i>&nbsp;</span>
+							Contrats						</a>
+					</li>
+										<li>
+						<a href="/auto-increment/interfaceContacts"> 
+							<span><i class="fa fa-at"></i>&nbsp;</span>
+							Contacts						</a>
+					</li>
+					<li class="divider"></li>
+										<li>
+						<a href="/auto-increment/interfaceUsers"> 
+							<span><i class="fa fa-users"></i>&nbsp;</span>
+							Utilisateurs						</a>
+					</li>
+					<li class="divider"></li>
+										<li>
+						<a href="/auto-increment/interfaceCustomization"> 
+							<span><i class="fa fa-cogs"></i>&nbsp;</span>
+							Configuration						</a>
+					</li>
+									</ul>
+			</li>
+						<li class="dropdown">
+				<a href="#" class="dropdown-toggle btn" data-toggle="dropdown">
+				<span class="hidden-xs">Auto increment Auto increment <i class="icon-caret-down"></i></span>
+				<span class="hidden-sm hidden-md hidden-lg icon-user"></span>
+				</a>
+				<ul class="dropdown-menu pull-right" id="profileMenu">
+										<li>
+						<a href="/auto-increment/myTestsManage">
+						 	<span><i class="fa fa-bar-chart"></i></span>Mes Évaluations						 </a>
+					</li>
+										
+					<li>
+						<a title="Mon Profil" href="/auto-increment/userProfile">
+							<span><i class="icon-user"></i></span>Mon Profil						</a>
+					</li>
+					<li class="divider"></li>
+										<li>
+						<a title="Messages" href="/auto-increment/userMessage">
+							<span> <i class="icon-envelope"></i></span>Messages 
+							<span id="nbUnreadMessages"></span>
+						</a>
+					</li>
+					<li>
+						<a title="Annonces" href="/auto-increment/userIndexAnnounce">
+							<span><i class="icon-bell-alt"></i></span>Annonces						</a>
+					</li>
+												
+																				
+					<li class="divider"></li>
+					<li>
+						<a title="Déconnexion" href="/auto-increment/logout">
+							<span><i class="icon-signout"></i></span>Déconnexion						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="hidden-sm hidden-md hidden-lg">
+				<a title="Déconnexion" href="/auto-increment/logout">
+					<span><i class="icon-signout"></i></span>
+				</a>
+			</li>
+									<li class="dropdown">
+				<a href="#" class="btn dropdown-toggle" data-toggle="dropdown">
+					<span class="hidden-xs">Français (FR) <i class="icon-caret-down"></i></span>
+					<span class="hidden-sm hidden-md hidden-lg">FR</span>
+				</a>
+				<ul class="dropdown-menu pull-right">
+																											<li>
+						<a href="/auto-increment/changeLanguage?CTCulture=en_US">English (US)</a>
+					</li>
+																						<li>
+						<a href="/auto-increment/changeLanguage?CTCulture=ru_RU">Русский (RU)</a>
+					</li>
+																						<li>
+						<a href="/auto-increment/changeLanguage?CTCulture=es_ES">Español (ES)</a>
+					</li>
+																						<li>
+						<a href="/auto-increment/changeLanguage?CTCulture=de_DE">Deutsch (DE)</a>
+					</li>
+																						<li>
+						<a href="/auto-increment/changeLanguage?CTCulture=pt_BR">Português (BR)</a>
+					</li>
+															</ul>
+			</li>
+					</ul>
+				<ul class="nav" id="navCreditCount">
+			<li>
+					<a id="creditBalanceDiv" href="/auto-increment/salesOrder" class="btn pull-right ec-first-text-color">
+		<span class="has-tooltip" data-original-title="Crédits" data-placement="bottom">23 <i class="fa fa-money fa-lg"></i></span>
+			</a>
+	
+					
+			</li>
+		</ul>
+			</nav>
+</header>
+<script type="text/javascript">
+	$('document').ready(function(){
+		if($('#logo').css('background-image')=='none'){
+			$('#logo').addClass('logo-responsive');
+			$('#logo').css({'background-image' : 'url("/images/common/cti_logo/horizontal_logo_without_tag.png")'});
+		}
+	});
+</script>
+	 			<div id="wrapper">
+		 	<nav id="main-nav">
+	<div class="navigation">
+		<ul class="nav nav-stacked">
+ 			 				<li>
+ 					 						<a
+						class="ec-first-link-text-color"
+						href="/auto-increment/dashboard?societeId=300000">
+							<i class="fa fa-dashboard"></i><span>Tableau de bord </span>						</a>
+ 					 				</li>
+ 			 				<li>
+ 					 						 						<a href="#" class="dropdown-collapse ec-first-link-text-color ">
+							<i class="fa fa-users"></i><span>Participants</span>		 					<i class="icon-angle-down angle-down"></i>
+						</a>
+
+						<ul class="nav nav-stacked ">
+		 										 			<li>
+						 			<a
+									class="item ec-first-link-text-color"
+									href="/auto-increment/candidatesManagementShow?societeId=300000">
+										<span>Liste</span>									</a>
+								</li>
+				  								 			<li>
+						 			<a
+									class="item ec-first-link-text-color hidden-xs"
+									href="/auto-increment/candidatesManagementCSVImport?societeId=300000">
+										<span>Importer</span>									</a>
+								</li>
+				  								 			<li>
+						 			<a
+									class="item ec-first-link-text-color"
+									href="/auto-increment/candidatesInvitation?societeId=300000">
+										<span>Campagne d'invitation</span>									</a>
+								</li>
+				  								 			<li>
+						 			<a
+									class="item ec-first-link-text-color"
+									href="/auto-increment/candidatesManagementArchive?societeId=300000">
+										<span>Archives</span>									</a>
+								</li>
+				  					 				</ul>
+ 					 				</li>
+ 			 				<li>
+ 					 						 						<a href="#" class="dropdown-collapse ec-first-link-text-color ">
+							<i class="fa fa-bar-chart"></i><span>Évaluations</span>		 					<i class="icon-angle-down angle-down"></i>
+						</a>
+
+						<ul class="nav nav-stacked ">
+		 										 			<li>
+						 			<a
+									class="item ec-first-link-text-color"
+									href="/auto-increment/candidatesManagementPassations?societeId=300000">
+										<span>Gestion des évaluations</span>									</a>
+								</li>
+				  								 			<li>
+						 			<a
+									class="item ec-first-link-text-color"
+									href="/auto-increment/candidatesManagementPassationExport?societeId=300000">
+										<span>Export de résultats</span>									</a>
+								</li>
+				  								 			<li>
+						 			<a
+									class="item ec-first-link-text-color"
+									href="/auto-increment/reportCustomizationTabs?societeId=300000">
+										<span>Personnalisation</span>									</a>
+								</li>
+				  					 				</ul>
+ 					 				</li>
+ 			 				<li>
+ 					 						<a
+						class="ec-first-link-text-color"
+						href="/auto-increment/candidatesManagementPassationStatistics?societeId=300000">
+							<i class="fa fa-pie-chart"></i><span>Statistiques</span>						</a>
+ 					 				</li>
+ 			 				<li>
+ 					 						<a
+						class="ec-first-link-text-color"
+						href="/auto-increment/evaluation?societeId=300000">
+							<i class="fa fa-book"></i><span>Catalogue produit</span>						</a>
+ 					 				</li>
+ 			 				<li>
+ 					 						<a
+						class="ec-third-link-text-color ec-first-bg-color"
+						href="/auto-increment/salesOrder?societeId=300000">
+							<i class="fa fa-shopping-cart"></i><span>Commander des crédits</span>						</a>
+ 					 				</li>
+ 			 				<li>
+ 					 						 						<a href="#" class="dropdown-collapse ec-first-link-text-color ">
+							<i class="fa fa-money"></i><span>Vos commandes</span>		 					<i class="icon-angle-down angle-down"></i>
+						</a>
+
+						<ul class="nav nav-stacked ">
+		 										 			<li>
+						 			<a
+									class="item ec-first-link-text-color"
+									href="/auto-increment/salesOrders?societeId=300000">
+										<span>Commandes en cours</span>									</a>
+								</li>
+				  								 			<li>
+						 			<a
+									class="item ec-first-link-text-color"
+									href="/auto-increment/billsShow?societeId=300000">
+										<span>Factures</span>									</a>
+								</li>
+				  								 			<li>
+						 			<a
+									class="item ec-first-link-text-color"
+									href="/auto-increment/consumptionHistoric?societeId=300000">
+										<span>Historique des crédits</span>									</a>
+								</li>
+				  					 				</ul>
+ 					 				</li>
+ 			 				<li>
+ 					 						<a
+						class="ec-first-link-text-color"
+						href="/auto-increment/documentation?societeId=300000">
+							<i class="fa fa-file-pdf-o"></i><span>Documentation</span>						</a>
+ 					 				</li>
+ 			 				<li>
+ 					 						<a
+						class="ec-first-link-text-color"
+						href="/auto-increment/faq?societeId=300000">
+							<i class="fa fa-info-circle"></i><span>Aide </span>						</a>
+ 					 				</li>
+ 			 				<li>
+ 					 						<a
+						class="ec-first-link-text-color"
+						href="/auto-increment/contact?societeId=300000">
+							<i class="fa fa-phone"></i><span>Contactez-nous</span>						</a>
+ 					 				</li>
+ 			 		</ul>
+	</div>
+</nav>			<section id="content">
+				<div class="container">
+					<div id="content-wrapper" class="row">
+						<div class="col-xs-12">
+
+							<div id="userGlobalContainer">
+
+						<div class="page-header">
+				<h1 class="pull-left ec-title-text-color ec-title-bg-color"><i class="fa fa-user"></i> Bình Lê</h1>
+			</div>
+				
+				<div class="">
+	<ul class="nav nav-tabs nav-tabs-simple">
+					<li class="">
+			<a href="/auto-increment/user?societeId=300000&userId=37024&mode=candidate&tab=form"><i class="fa fa-edit"> </i>Informations personnelles</a>
+		</li>
+					<li class="">
+			<a href="/auto-increment/user?societeId=300000&userId=37024&mode=candidate&tab=invite"><i class="fa fa-paper-plane"> </i> Faire passer un test</a>
+		</li>
+					<li class="active">
+			<a href="/auto-increment/user?societeId=300000&userId=37024&mode=candidate&tab=inviteVideoInterview"><i class="fa fa-paper-plane"> </i> Faire passer un Interview Vidéo</a>
+		</li>
+					<li class="">
+			<a href="/auto-increment/user?societeId=300000&userId=37024&mode=candidate&tab=tests"><i class="fa fa-pie-chart"> </i>Évaluations</a>
+		</li>
+					<li class="">
+			<a href="/auto-increment/user?societeId=300000&userId=37024&mode=candidate&tab=talentMap"><i class="fa fa-area-chart"> </i> TALENT MAP</a>
+		</li>
+		</ul>
+</div>
+			
+src/apps/customeroffice/modules/candidatesManagement/templates/_invitationVideoInterviewSetting.php
+ <app-root employerCode="004005006" candidateCode="001002003" ></app-root>
+</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+			</div>
+	<button id="goToTopOfPage" style="font-weight : bold; "><i class="fa fa-chevron-up"></i></button>
+	<footer class="copy-footer text-center">
+		<img src="http://centraltest.ct:81/images/common/logo_ct_assessment.png" alt="Central Test" /> - 
+		<a class="ec-second-link-text-color" target="_blank" href="https://app.centraltest.com/files/pdf/CGV.pdf">Conditions Générales de Vente</a>		 - &copy;&#8239;Central Test 2017	</footer>
+	<script type="text/javascript">
+				$('document').ready(function(){
+			if(CTR.helper.isMobile()){
+				//on affiche le bouton de retour top page uniquement si la page est deux fois plus grande que la hauteur de l'écran. (valeur arbitraire. Feel free to change it).
+				if($(document).height() > ($(window).height()) * 2){
+					$('#goToTopOfPage').css({'display' : 'block'});
+				}
+				$('.navbar-brand').css({'display' : 'none'});
+				$('body').addClass('main-nav-closed');
+			}
+			
+			CTR.helper.addSwipeMessageToResponsiveTable("Balayer pour afficher d'autres colonnes");
+			
+			$('#goToTopOfPage').on('click', function(){
+				 $("html, body").animate({ scrollTop: 0 }, 400);
+			});
+
+							CTR.customer.checkAnnouncements('/auto-increment/userDisplayAnnounce');
+
+				checkMessages();
+
+	 			var timer = setInterval(function(){
+	 				checkMessages();
+
+	 			}, 10000);
+ 					});
+		function checkMessages(){
+
+			var rkCallBack = new rk.event.callback(function(response) {
+				if(!rk.util.isEmpty(response)){
+ 				    var data = $.parseJSON(response);
+ 				    $('#nbUnreadMessages').html('('+data.iNbUnreadMessage+')');
+
+ 				   	$.jGrowl('<a href="/auto-increment/userMessage">'+data.sMessage+'</a>', {
+ 		 		    	sticky: true,
+ 		 		    	appendTo: $('#content-wrapper'),
+ 		 		    	glue: 'before'
+ 		 		   	});
+				}
+			});
+
+			var ajaxQuery = new rk.ajax('/auto-increment/userMessageCheck', rkCallBack);
+
+			ajaxQuery.query();
+		}
+		
+	</script>
 </body>
 </html>

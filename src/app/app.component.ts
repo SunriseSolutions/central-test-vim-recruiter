@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  employerCode: string;
+  candidateCode: string;
+  
+  constructor(private elementRef:ElementRef) {
+    this.employerCode = this.elementRef.nativeElement.getAttribute('employerCode');
+    this.candidateCode = this.elementRef.nativeElement.getAttribute('candidateCode');
+}
+
 }
