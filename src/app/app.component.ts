@@ -17,5 +17,4 @@ export class AppComponent {
     this.candidateCode = this.elementRef.nativeElement.getAttribute('candidateCode');
     this.settings  = new AppSettings();
   }
-
 }
